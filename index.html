@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran </title>
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            background-color: rgb(210, 210, 210);
+            direction: rtl;
+        }
+        .boxs{
+            width: 800px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px 0;
+            border-radius: 6px;
+            position: relative;
+            max-height: 702px;
+            overflow: auto;
+        }
+        .btn{
+            padding: 10px 21px;
+            width: fit-content;
+            background: #0d47a1;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 0 248px;
+            font-family: arial;
+        }
+        input{
+            width: 54%;
+            position: relative;
+            padding: 20px;
+            right: 69px;
+            margin: 0 0 10px 0;
+            border: none;
+            border: 2px solid #0277bd;
+            border-radius: 6px;
+            font-size: 18px;
+            text-align: center;
+        }
+        input:focus,.list:focus{
+            outline: none;
+        }
+
+        .data{
+            padding: 8px 29px;
+            font-size: 25px;
+            font-family: arial;
+            line-height: 1.5;
+            border-bottom: 2px solid #d1d1d1;
+        }
+        .list{
+            padding: 14px 13px;
+            font-size: 17px;
+            font-family: system-ui;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border: none;
+            border: 2px solid #0277bd;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .voice audio{
+            width: 50%;
+            position: relative;
+            right: 12%;
+            margin: 26px 0 5px 0;
+        }
+
+        .end{
+            font-size: 26px;
+            left: -77%;
+            position: relative;
+            margin: 12px 0 0 0;
+            width: fit-content;
+        }
+        
+
+
+    </style>
+    
+    
+</head>
+<body>
+    
+    <div class="boxs">
+        <input type="text" placeholder="ادخل اسم السوره">
+        <div class="btn">ابحث</div>
+        <div class="voice"></div>
+        <div class="data"></div>
+        <div class="end"></div>
+        <select class="list" >
+            <option class="Al-Faatiha" value="سُورَةُ ٱلْفَاتِحَةِ">سوره الفاتحه</option><option class="Al-Baqara" value="سُورَةُ البَقَرَةِ">سوره البقره</option><option class="Aal-i-Imraan" value="سُورَةُ آلِ عِمۡرَانَ">سوره ال عمران</option><option class="An-Nisaa" value="سُورَةُ النِّسَاءِ">سوره النساء</option><option class="Al-Maaida" value="سُورَةُ المَائـِدَةِ">سوره المائده</option><option class="Al-An'aam" value="سُورَةُ الأَنۡعَامِ">سوره الانعام</option><option class="Al-A'raaf" value="سُورَةُ الأَعۡرَافِ">سوره الاعراف</option><option class="Al-Anfaal" value="سُورَةُ الأَنفَالِ">سوره الانفال</option><option class="At-Tawba" value="سُورَةُ التَّوۡبَةِ">سوره التوبه</option><option class="Yunus" value="سُورَةُ يُونُسَ">سوره يونس</option><option class="Hud" value="سُورَةُ هُودٍ">سوره هود</option><option class="Yusuf" value="سُورَةُ يُوسُفَ">سوره يوسف</option><option class="Ar-Ra'd" value="سُورَةُ الرَّعۡدِ">سوره الرعد</option><option class="Ibrahim" value="سُورَةُ إِبۡرَاهِيمَ">سوره ابراهيم</option><option class="Al-Hijr" value="سُورَةُ الحِجۡرِ">سوره الحجر</option><option class="An-Nahl" value="سُورَةُ النَّحۡلِ">سوره النحل</option><option class="Al-Israa" value="سُورَةُ الإِسۡرَاءِ">سوره الاسراء</option><option class="Al-Kahf" value="سُورَةُ الكَهۡفِ">سوره الكهف</option><option class="Maryam" value="سُورَةُ مَرۡيَمَ">سوره مريم</option><option class="Taa-Haa" value="سُورَةُ طه">سوره طه</option><option class="Al-Anbiyaa" value="سُورَةُ الأَنبِيَاءِ">سوره الانبياء</option><option class="Al-Hajj" value="سُورَةُ الحَجِّ">سوره الحج</option><option class="Al-Muminoon" value="سُورَةُ المُؤۡمِنُونَ">سوره المءمنون</option><option class="An-Noor" value="سُورَةُ النُّورِ">سوره النور</option><option class="Al-Furqaan" value="سُورَةُ الفُرۡقَانِ">سوره الفرقان</option><option class="Ash-Shu'araa" value="سُورَةُ الشُّعَرَاءِ">سوره الشعراء</option><option class="An-Naml" value="سُورَةُ النَّمۡلِ">سوره النمل</option><option class="Al-Qasas" value="سُورَةُ القَصَصِ">سوره القصص</option><option class="Al-Ankaboot" value="سُورَةُ العَنكَبُوتِ">سوره العنكبوت</option><option class="Ar-Room" value="سُورَةُ الرُّومِ">سوره الروم</option><option class="Luqman" value="سُورَةُ لُقۡمَانَ">سوره لقمان</option><option class="As-Sajda" value="سُورَةُ السَّجۡدَةِ">سوره السجده</option><option class="Al-Ahzaab" value="سُورَةُ الأَحۡزَابِ">سوره الاحزاب</option><option class="Saba" value="سُورَةُ سَبَإٍ">سوره سبا</option><option class="Faatir" value="سُورَةُ فَاطِرٍ">سوره فاطر</option><option class="Yaseen" value="سُورَةُ يسٓ">سوره يس</option><option class="As-Saaffaat" value="سُورَةُ الصَّافَّاتِ">سوره الصافات</option><option class="Saad" value="سُورَةُ صٓ">سوره ص</option><option class="Az-Zumar" value="سُورَةُ الزُّمَرِ">سوره الزمر</option><option class="Ghafir" value="سُورَةُ غَافِرٍ">سوره غافر</option><option class="Fussilat" value="سُورَةُ فُصِّلَتۡ">سوره فصلت</option><option class="Ash-Shura" value="سُورَةُ الشُّورَىٰ">سوره الشوري</option><option class="Az-Zukhruf" value="سُورَةُ الزُّخۡرُفِ">سوره الزخرف</option><option class="Ad-Dukhaan" value="سُورَةُ الدُّخَانِ">سوره الدخان</option><option class="Al-Jaathiya" value="سُورَةُ الجَاثِيَةِ">سوره الجاثيه</option><option class="Al-Ahqaf" value="سُورَةُ الأَحۡقَافِ">سوره الاحقاف</option><option class="Muhammad" value="سُورَةُ مُحَمَّدٍ">سوره محمد</option><option class="Al-Fath" value="سُورَةُ الفَتۡحِ">سوره الفتح</option><option class="Al-Hujuraat" value="سُورَةُ الحُجُرَاتِ">سوره الحجرات</option><option class="Qaaf" value="سُورَةُ قٓ">سوره ق</option><option class="Adh-Dhaariyat" value="سُورَةُ الذَّارِيَاتِ">سوره الذاريات</option><option class="At-Tur" value="سُورَةُ الطُّورِ">سوره الطور</option><option class="An-Najm" value="سُورَةُ النَّجۡمِ">سوره النجم</option><option class="Al-Qamar" value="سُورَةُ القَمَرِ">سوره القمر</option><option class="Ar-Rahmaan" value="سُورَةُ الرَّحۡمَٰن">سوره الرحمن</option><option class="Al-Waaqia" value="سُورَةُ الوَاقِعَةِ">سوره الواقعه</option><option class="Al-Hadid" value="سُورَةُ الحَدِيدِ">سوره الحديد</option><option class="Al-Mujaadila" value="سُورَةُ المُجَادلَةِ">سوره المجادله</option><option class="Al-Hashr" value="سُورَةُ الحَشۡرِ">سوره الحشر</option><option class="Al-Mumtahana" value="سُورَةُ المُمۡتَحنَةِ">سوره الممتحنه</option><option class="As-Saff" value="سُورَةُ الصَّفِّ">سوره الصف</option><option class="Al-Jumu'a" value="سُورَةُ الجُمُعَةِ">سوره الجمعه</option><option class="Al-Munaafiqoon" value="سُورَةُ المُنَافِقُونَ">سوره المنافقون</option><option class="At-Taghaabun" value="سُورَةُ التَّغَابُنِ">سوره التغابن</option><option class="At-Talaaq" value="سُورَةُ الطَّلَاقِ">سوره الطلاق</option><option class="At-Tahrim" value="سُورَةُ التَّحۡرِيمِ">سوره التحريم</option><option class="Al-Mulk" value="سُورَةُ المُلۡكِ">سوره الملك</option><option class="Al-Qalam" value="سُورَةُ القَلَمِ">سوره القلم</option><option class="Al-Haaqqa" value="سُورَةُ الحَاقَّةِ">سوره الحاقه</option><option class="Al-Ma'aarij" value="سُورَةُ المَعَارِجِ">سوره المعارج</option><option class="Nooh" value="سُورَةُ نُوحٍ">سوره نوح</option><option class="Al-Jinn" value="سُورَةُ الجِنِّ">سوره الجن</option><option class="Al-Muzzammil" value="سُورَةُ المُزَّمِّلِ">سوره المزمل</option><option class="Al-Muddaththir" value="سُورَةُ المُدَّثِّرِ">سوره المدثر</option><option class="Al-Qiyaama" value="سُورَةُ القِيَامَةِ">سوره القيامه</option><option class="Al-Insaan" value="سُورَةُ الإِنسَانِ">سوره الانسان</option><option class="Al-Mursalaat" value="سُورَةُ المُرۡسَلَاتِ">سوره المرسلات</option><option class="An-Naba" value="سُورَةُ النَّبَإِ">سوره النبا</option><option class="An-Naazi'aat" value="سُورَةُ النَّازِعَاتِ">سوره النازعات</option><option class="Abasa" value="سُورَةُ عَبَسَ">سوره عبس</option><option class="At-Takwir" value="سُورَةُ التَّكۡوِيرِ">سوره التكوير</option><option class="Al-Infitaar" value="سُورَةُ الانفِطَارِ">سوره الانفطار</option><option class="Al-Mutaffifin" value="سُورَةُ المُطَفِّفِينَ">سوره المطففين</option><option class="Al-Inshiqaaq" value="سُورَةُ الانشِقَاقِ">سوره الانشقاق</option><option class="Al-Burooj" value="سُورَةُ البُرُوجِ">سوره البروج</option><option class="At-Taariq" value="سُورَةُ الطَّارِقِ">سوره الطارق</option><option class="Al-A'laa" value="سُورَةُ الأَعۡلَىٰ">سوره الاعلي</option><option class="Al-Ghaashiya" value="سُورَةُ الغَاشِيَةِ">سوره الغاشيه</option><option class="Al-Fajr" value="سُورَةُ الفَجۡرِ">سوره الفجر</option><option class="Al-Balad" value="سُورَةُ البَلَدِ">سوره البلد</option><option class="Ash-Shams" value="سُورَةُ الشَّمۡسِ">سوره الشمس</option><option class="Al-Lail" value="سُورَةُ اللَّيۡلِ">سوره الليل</option><option class="Ad-Dhuhaa" value="سُورَةُ الضُّحَىٰ">سوره الضحي</option><option class="Ash-Sharh" value="سُورَةُ الشَّرۡحِ">سوره الشرح</option><option class="At-Tin" value="سُورَةُ التِّينِ">سوره التين</option><option class="Al-Alaq" value="سُورَةُ العَلَقِ">سوره العلق</option><option class="Al-Qadr" value="سُورَةُ القَدۡرِ">سوره القدر</option><option class="Al-Bayyina" value="سُورَةُ البَيِّنَةِ">سوره البينه</option><option class="Az-Zalzala" value="سُورَةُ الزَّلۡزَلَةِ">سوره الزلزله</option><option class="Al-Aadiyaat" value="سُورَةُ العَادِيَاتِ">سوره العاديات</option><option class="Al-Qaari'a" value="سُورَةُ القَارِعَةِ">سوره القارعه</option><option class="At-Takaathur" value="سُورَةُ التَّكَاثُرِ">سوره التكاثر</option><option class="Al-Asr" value="سُورَةُ العَصۡرِ">سوره العصر</option><option class="Al-Humaza" value="سُورَةُ الهُمَزَةِ">سوره الهمزه</option><option class="Al-Fil" value="سُورَةُ الفِيلِ">سوره الفيل</option><option class="Quraish" value="سُورَةُ قُرَيۡشٍ">سوره قريش</option><option class="Al-Maa'un" value="سُورَةُ المَاعُونِ">سوره الماعون</option><option class="Al-Kawthar" value="سُورَةُ الكَوۡثَرِ">سوره الكوثر</option><option class="Al-Kaafiroon" value="سُورَةُ الكَافِرُونَ">سوره الكافرون</option><option class="An-Nasr" value="سُورَةُ النَّصۡرِ">سوره النصر</option><option class="Al-Masad" value="سُورَةُ المَسَدِ">سوره المسد</option><option class="Al-Ikhlaas" value="سُورَةُ الإِخۡلَاصِ">سوره الاخلاص</option><option class="Al-Falaq" value="سُورَةُ الفَلَقِ">سوره الفلق</option><option class="An-Naas" value="سُورَةُ النَّاسِ">سوره الناس</option>
+        </select>
+    </div>
+
+
+        <script src="main.js"></script>
+</body>
+</html>
